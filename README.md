@@ -59,4 +59,35 @@ source venv/bin/activate       # Mac/Linux
 venv\Scripts\activate          # Windows
 pip install -r requirements.txt
 jupyter notebook
+```
+---
+
+## 📊 Key Results
+
+| Evaluation Metric | Logistic Regression | Random Forest |
+|-------------------|---------------------|---------------|
+| Accuracy          | xx.x%               | xx.x%         |
+| Precision         | xx.x%               | xx.x%         |
+| Recall            | xx.x%               | xx.x%         |
+| F1 Score          | xx.x%               | xx.x%         |
+
+Models revealed that lifestyle and behavioral health variables such as physical activity, BMI, and overall health rating were strong predictors of obesity risk.
+
+---
+
+## 📝 Data Source
+
+CDC Behavioral Risk Factor Surveillance System (BRFSS)  
+Dataset Download: https://www.cdc.gov/brfss/
+
+---
+
+## 🧠 Author
+
+**Ailey V. Shollenberger**  
+Informatics – Human Centered Data Science  
+The University of Texas at Austin  
+GitHub: https://github.com/aileys  
+
+---
 
