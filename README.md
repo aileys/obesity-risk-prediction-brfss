@@ -31,15 +31,8 @@ obesity-risk-prediction-brfss/
 │
 ├─ notebooks/
 │   ├─ i310_final_project.ipynb
-│   └─ README.md
-│
-├─ src/
-│   └─ README.md
 │
 ├─ data/
-│   └─ README.md
-│
-├─ figures/
 │   └─ README.md
 │
 ├─ README.md
@@ -64,14 +57,28 @@ jupyter notebook
 
 ## 📊 Key Results
 
-| Evaluation Metric | Logistic Regression | Random Forest |
-|-------------------|---------------------|---------------|
-| Accuracy          | xx.x%               | xx.x%         |
-| Precision         | xx.x%               | xx.x%         |
-| Recall            | xx.x%               | xx.x%         |
-| F1 Score          | xx.x%               | xx.x%         |
+| Evaluation Metric | Logistic Regression |
+|-------------------|----------------------|
+| Overall Accuracy  | 0.58 |
+| Obese Class F1 Score | 0.65 |
+| Not Obese Class F1 Score | 0.49 |
+| Average F1 Score across 5 folds (Obese) | 0.6636 |
 
-Models revealed that lifestyle and behavioral health variables such as physical activity, BMI, and overall health rating were strong predictors of obesity risk.
+The model performed significantly better at predicting individuals classified as **Obese** compared to **Not Obese**, with a recall of 0.73 for the Obese class, indicating strong sensitivity in identifying true positive obesity cases. The cross-validation average F1 score of **0.6636** further demonstrates stability and reliability in predicting obesity risk.
+
+Key predictors included:
+- **BMI**
+- **Physical activity level**
+- **General health rating**
+- **Smoking status**
+---
+
+## 📊 Model Insights
+
+✔ The model was more accurate at predicting **Obese** individuals (F1 Score: 0.65)  
+✔ Lower recall for **Not Obese** suggests opportunity for class balancing  
+✔ Average F1 Score for the Obese class across 5 folds: **0.6636**  
+✔ Key influential features included BMI, physical activity, general health rating, and smoking status  
 
 ---
 
@@ -84,7 +91,7 @@ Dataset Download: https://www.cdc.gov/brfss/
 
 ## 🧠 Author
 
-**Ailey V. Shollenberger**  
+**Ailey Shollenberger**  
 Informatics – Human Centered Data Science  
 The University of Texas at Austin  
 GitHub: https://github.com/aileys  
