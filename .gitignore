@@ -1,0 +1,26 @@
+
+---
+
+### 📜 .gitignore  
+Create this file in the root:
+
+```txt
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+env/
+venv/
+
+# Data Files
+data/*.csv
+data/*.xlsx
+data/*.sav
+*.zip
+
+# System Files
+.DS_Store
+Thumbs.db
