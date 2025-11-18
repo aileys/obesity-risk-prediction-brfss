@@ -1,4 +1,61 @@
-# I310D_Final
-We began by obtaining my data from the Behavioral Risk Factor Surveillance System (BRFSS) dataset titled  “Nutrition, Physical Activity, and Obesity – Behavioral Risk Factor Surveillance System.” This dataset includes public health information related to behavioral risk factors such as diet, exercise, obesity, and more, collected through large-scale health surveys. The dataset is publicly available and offers a wide range of variables, including demographic information like age, race/ethnicity, education level, and sex, as well as specific survey responses and corresponding values. 
-After loading the dataset into a pandas DataFrame using Python, we narrowed down the information to include only the most relevant columns for my analysis. The original dataset contained many variables, but not all of them were necessary for our research purposes. To make the data easier to analyze and more focused, we created a filtered version that kept only the columns we were most interested in: Race/Ethnicity, Location Description, Age (years), Education, Sex, Data Value, Year Start, Question, and Data Value Unit. 
-By filtering the dataset, we removed unnecessary clutter and made the data more manageable for any future analysis I plan to perform. For example, this streamlined dataset will allow me to more easily examine how factors like education level or age influence obesity rates, or how these patterns vary across different regions and ethnic groups. After filtering, we saved the new, cleaned version as a separate CSV file.
+# Obesity Risk Prediction Using Logistic Regression  
+### Public Health Data Analysis with BRFSS (Behavioral Risk Factor Surveillance System)
+
+This project applies **logistic regression** to predict **obesity risk** using a subset of the CDC's BRFSS dataset. The analysis explores demographic, behavioral, and health-related factors to understand how lifestyle variables influence obesity outcomes.  
+
+This work was completed as part of my **Human-Centered Data Science course (I310D)** at The University of Texas at Austin, with a focus on ethical data handling, statistical modeling, and interpretability.
+
+---
+
+## 🧠 Project Objectives
+- Build a **binary classification model** predicting obesity status  
+- Perform **data cleaning, feature selection, and preprocessing**  
+- Visualize obesity-related patterns in demographic and behavioral variables  
+- Evaluate model performance using accuracy, confusion matrix, and cross-validation  
+- Interpret which factors most influence obesity likelihood  
+
+---
+
+## 📊 Dataset  
+**Source:** CDC Behavioral Risk Factor Surveillance System (BRFSS)  
+**Type:** Public health survey (400,000+ annual responses)  
+**Subset used:** Selected features relevant to obesity, lifestyle, and health behavior  
+
+Key features included:  
+- BMI  
+- Exercise frequency  
+- Self-reported health status  
+- Smoking & alcohol use  
+- Age group  
+- Income & education  
+- Chronic conditions  
+
+---
+
+## 🛠️ Methods & Tools
+**Languages & Libraries:**  
+- Python  
+- Pandas  
+- NumPy  
+- scikit-learn  
+- Matplotlib / Seaborn  
+
+**Techniques:**  
+- Data cleaning & imputation  
+- Binary labeling of obesity risk  
+- Train/test splitting  
+- Logistic regression  
+- Evaluation metrics (accuracy, precision, recall)  
+- Cross-validation  
+- Feature importance interpretation 
+
+---
+
+## 🔍 Key Insights
+- Physical activity and smoking status showed strong predictive relationships with obesity risk  
+- Age and income groups revealed notable disparities in obesity likelihood  
+- Self-reported health status was one of the strongest indicators  
+
+
+
+
