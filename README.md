@@ -1,61 +1,62 @@
-# Obesity Risk Prediction Using Logistic Regression  
-### Public Health Data Analysis with BRFSS (Behavioral Risk Factor Surveillance System)
+# Obesity Risk Prediction using BRFSS Health Data
 
-This project applies **logistic regression** to predict **obesity risk** using a subset of the CDC's BRFSS dataset. The analysis explores demographic, behavioral, and health-related factors to understand how lifestyle variables influence obesity outcomes.  
-
-This work was completed as part of my **Human-Centered Data Science course (I310D)** at The University of Texas at Austin, with a focus on ethical data handling, statistical modeling, and interpretability.
+This project builds a machine learning model to predict obesity risk using demographic, lifestyle, and behavioral health features based on the CDC BRFSS dataset. Completed as part of the I310D Human-Centered Data Science course at The University of Texas at Austin.
 
 ---
 
-## 🧠 Project Objectives
-- Build a **binary classification model** predicting obesity status  
-- Perform **data cleaning, feature selection, and preprocessing**  
-- Visualize obesity-related patterns in demographic and behavioral variables  
-- Evaluate model performance using accuracy, confusion matrix, and cross-validation  
-- Interpret which factors most influence obesity likelihood  
+## 📌 Project Objectives
+- Clean and preprocess large-scale survey data
+- Build and evaluate classification models (Logistic Regression, Random Forest)
+- Analyze feature importance and interpret results
+- Use data visualization to interpret findings
+- Communicate insights in human-centered and actionable ways
 
 ---
 
-## 📊 Dataset  
-**Source:** CDC Behavioral Risk Factor Surveillance System (BRFSS)  
-**Type:** Public health survey (400,000+ annual responses)  
-**Subset used:** Selected features relevant to obesity, lifestyle, and health behavior  
+## 🛠️ Tools and Technologies
 
-Key features included:  
-- BMI  
-- Exercise frequency  
-- Self-reported health status  
-- Smoking & alcohol use  
-- Age group  
-- Income & education  
-- Chronic conditions  
+| Category           | Tools |
+|--------------------|------------------------------|
+| Languages          | Python |
+| Data Processing    | Pandas, NumPy |
+| Machine Learning   | Scikit-learn, Statsmodels |
+| Visualization      | Matplotlib, Seaborn |
+| Explainability     | Coefficients, Accuracy, Confusion Matrix |
+| Notebook Platform  | Jupyter Notebook |
 
 ---
 
-## 🛠️ Methods & Tools
-**Languages & Libraries:**  
-- Python  
-- Pandas  
-- NumPy  
-- scikit-learn  
-- Matplotlib / Seaborn  
-
-**Techniques:**  
-- Data cleaning & imputation  
-- Binary labeling of obesity risk  
-- Train/test splitting  
-- Logistic regression  
-- Evaluation metrics (accuracy, precision, recall)  
-- Cross-validation  
-- Feature importance interpretation 
+## 📂 Repository Structure
+obesity-risk-prediction-brfss/
+│
+├─ notebooks/
+│   ├─ i310_final_project.ipynb
+│   └─ README.md
+│
+├─ src/
+│   └─ README.md
+│
+├─ data/
+│   └─ README.md
+│
+├─ figures/
+│   └─ README.md
+│
+├─ README.md
+├─ requirements.txt
+└─ .gitignore
 
 ---
 
-## 🔍 Key Insights
-- Physical activity and smoking status showed strong predictive relationships with obesity risk  
-- Age and income groups revealed notable disparities in obesity likelihood  
-- Self-reported health status was one of the strongest indicators  
+## 🚀 How to Run the Project
 
-
-
+### 1. Clone the repository
+```bash
+git clone https://github.com/aileys/obesity-risk-prediction-brfss.git
+cd obesity-risk-prediction-brfss
+python -m venv venv
+source venv/bin/activate       # Mac/Linux
+venv\Scripts\activate          # Windows
+pip install -r requirements.txt
+jupyter notebook
 
